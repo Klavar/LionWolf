@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lionwolf" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-zP-Vdh">
+                                <rect key="frame" x="45" y="409" width="71" height="30"/>
+                                <state key="normal" title="Hide Lion"/>
+                                <connections>
+                                    <action selector="hideLion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3l8-7G-hzB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guq-Tj-Z4f">
+                                <rect key="frame" x="263" y="409" width="67" height="30"/>
+                                <state key="normal" title="Hide Wolf"/>
+                                <connections>
+                                    <action selector="hideWolf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MGu-pt-Aov"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lion" translatesAutoresizingMaskIntoConstraints="NO" id="cm8-ND-Eqf">
+                                <rect key="frame" x="15" y="61" width="131" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wolf" translatesAutoresizingMaskIntoConstraints="NO" id="AO7-SH-eN5">
+                                <rect key="frame" x="227" y="61" width="139" height="128"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1N-pp-V6F">
+                                <rect key="frame" x="45" y="409" width="76" height="30"/>
+                                <state key="normal" title="Show Lion"/>
+                                <connections>
+                                    <action selector="showLion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6rQ-8L-iko"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFb-NX-z5U">
+                                <rect key="frame" x="263" y="409" width="73" height="30"/>
+                                <state key="normal" title="Show Wolf"/>
+                                <connections>
+                                    <action selector="showWolf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="toP-jI-Lc7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="hideLionButton" destination="o5d-zP-Vdh" id="5ED-yV-2G7"/>
+                        <outlet property="hideWolfButton" destination="Guq-Tj-Z4f" id="dT0-VV-ixp"/>
+                        <outlet property="picLion" destination="cm8-ND-Eqf" id="Bay-h1-b14"/>
+                        <outlet property="picWolf" destination="AO7-SH-eN5" id="TGk-w3-hKd"/>
+                        <outlet property="showLionButton" destination="a1N-pp-V6F" id="RMD-9s-6pq"/>
+                        <outlet property="showWolfButton" destination="rFb-NX-z5U" id="A0g-QY-SbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444.5" y="474.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lion" width="1667" height="1667"/>
+        <image name="Wolf" width="1667" height="1667"/>
+    </resources>
+</document>
